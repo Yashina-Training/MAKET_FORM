@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAKET_FORM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</h1>
+    <form action="">
+      <label for="text" class="label" style:="float:left;">Название статьи:</label>
+      <input type="text" name="article" id="article" />
+      <label for="list" class="label">Рубрика:</label>
+      <select name="list" id="list">
+        <option value="программирование">программирование</option>
+        <option value="история">история</option>
+        <option value="математика">математика</option>
+        <option value="иностранные языки">иностранные языки</option>
+        <option value="медицина">медицина</option>
+      </select>
+      <p class="label">Публикация:</p>
+      <label for="r1" class="radio">
+        <input type="radio" id="r1" name="publication" value="на сайте" />
+        <span>на сайте</span>
+      </label>
+      <label for="r2" class="radio">
+        <input type="radio" id="r2" name="publication" value="в журнале" />
+        <span>в журнале</span>
+      </label>
+      <label for="r3" class="radio">
+        <input
+          type="radio"
+          id="r3"
+          name="publication"
+          value="на сайте и в журнале"
+        />
+        <span>на сайте и в журнале</span>
+      </label>
+      <label for="allow" class="label">Разрешить комментарии:</label>
+      <input type="checkbox" name="allow" id="allow" checked />
+
+      <label for="text" class="text-label">Текст статьи:</label>
+      <textarea name="text" id="text"></textarea>
+      <input type="submit" value="Опубликовать" />
+
+      <label for=""></label>
+    </form>
+  </body>
+</html>

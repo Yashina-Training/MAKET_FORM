@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-size: 24px;
+  font-weight: normal;
+}
+.label {
+  display: inline-block;
+  width: 320px;
+  margin: 5px 0;
+}
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+}
+input[type="text"] {
+  width: 100%;
+}
+.text-label {
+  display: block;
+  margin: 5px 0;
+}
