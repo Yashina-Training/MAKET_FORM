@@ -10,15 +10,14 @@ h1 {
   margin: 5px 0;
 }
 textarea {
-  width: 98%;
+  width: 100%;
 }
 
 input[type="submit"] {
   margin-top: 10px;
 }
 input[type="text"] {
-  display: block;
-  width: 98%;
+  width: 100%;
 }
 .text-label {
 }
@@ -35,6 +34,7 @@ input[type="text"] {
 }
 .input-wrapper {
   overflow: hidden;
+  padding-right: 8px;
 }
 
 @media (max-width: 768px) {
