@@ -9,38 +9,55 @@
   <body>
     <h1>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</h1>
     <form action="">
-      <label for="text" class="label" style:="float:left;">Название статьи:</label>
-      <input type="text" name="article" id="article" />
-      <label for="list" class="label">Рубрика:</label>
-      <select name="list" id="list">
-        <option value="программирование">программирование</option>
-        <option value="история">история</option>
-        <option value="математика">математика</option>
-        <option value="иностранные языки">иностранные языки</option>
-        <option value="медицина">медицина</option>
-      </select>
-      <p class="label">Публикация:</p>
-      <label for="r1" class="radio">
-        <input type="radio" id="r1" name="publication" value="на сайте" />
-        <span>на сайте</span>
+      <label for="text" class="label">
+        <span class="caption caption-float">Название статьи:</span>
+        <div class="input-wrapper">
+          <input type="text" name="article" id="article" />
+        </div>
       </label>
-      <label for="r2" class="radio">
-        <input type="radio" id="r2" name="publication" value="в журнале" />
-        <span>в журнале</span>
-      </label>
-      <label for="r3" class="radio">
-        <input
-          type="radio"
-          id="r3"
-          name="publication"
-          value="на сайте и в журнале"
-        />
-        <span>на сайте и в журнале</span>
-      </label>
-      <label for="allow" class="label">Разрешить комментарии:</label>
-      <input type="checkbox" name="allow" id="allow" checked />
 
-      <label for="text" class="text-label">Текст статьи:</label>
+      <label for="list" class="label">
+        <span class="caption">Рубрика:</span>
+        <select name="list" id="list">
+          <option value="программирование">программирование</option>
+          <option value="история">история</option>
+          <option value="математика">математика</option>
+          <option value="иностранные языки">иностранные языки</option>
+          <option value="медицина">медицина</option>
+        </select>
+      </label>
+
+      <div class="label">
+        <span class="caption">Публикация:</span>
+        <div class="radio-wrapper">
+          <label for="r1" class="radio">
+            <input type="radio" id="r1" name="publication" value="на сайте" />
+            <span>на сайте</span>
+          </label>
+          <label for="r2" class="radio">
+            <input type="radio" id="r2" name="publication" value="в журнале" />
+            <span>в журнале</span>
+          </label>
+          <label for="r3" class="radio">
+            <input
+              type="radio"
+              id="r3"
+              name="publication"
+              value="на сайте и в журнале"
+            />
+            <span>на сайте и в журнале</span>
+          </label>
+        </div>
+      </div>
+
+      <label for="allow" class="label">
+        <span class="caption caption-checkbox">Разрешить комментарии:</span>
+        <input type="checkbox" name="allow" id="allow" checked />
+      </label>
+
+      <label for="text" class="label"
+        ><span class="caption">Текст статьи:</span></label
+      >
       <textarea name="text" id="text"></textarea>
       <input type="submit" value="Опубликовать" />
 
